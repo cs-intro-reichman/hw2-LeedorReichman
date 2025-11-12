@@ -16,7 +16,7 @@ public class Cheers {
 
                 for (int i = 0; i < word.length(); i++) {
                         char ch = word.charAt(i);
-                        String article = (anLetters.indexOf(ch) >= 0) ? "an" : "a";
+                        String article = (anLetters.indexOf(ch) >= 0) ? "an" : "a ";
                         System.out.println("Give me " + article + " " + ch + ": " + ch + "!");
                 }
 

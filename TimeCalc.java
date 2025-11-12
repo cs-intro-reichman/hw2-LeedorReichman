@@ -10,7 +10,9 @@ public class TimeCalc {
 
         int totalHours = (totalMinutes / 60) % 24;
         int remainingMinutes = totalMinutes % 60;
+        String hourString = (totalHours < 10 )? "0" + totalHours : ("" + totalHours);
+        String minuteString = (remainingMinutes < 10 )? "0" + remainingMinutes : ("" + remainingMinutes);
 
-        System.out.println("" + totalHours + ":" + remainingMinutes);
+        System.out.println(hourString + ":" + minuteString);
     }
 }
